@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
-
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
     <link rel="stylesheet" href="sass/style.scss">
+    <link rel="preload" href="fonts/alumni-sans-800.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-400.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans-600.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-300.woff2" as="font" crossorigin="anonymous">
+    <title>SUPERGYM</title>
+    <meta name="description" content="Первый проект акселератора Фитнес центр.">
+    <!-- <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicons/icon.png">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/icon-180.png"> -->
   </head>
 
   <body class="page-body">
+    <section class="hero" data-test="hero">
+      <div class="hero__header">
+        <img class="hero__logo" src="" alt="Логотип фитнес клуба.">
+        <a class="hero__phone" href="tel:88005555555">8 800 555-55-55</a>
+      </div>
+      <div class="hero__content">
+        <p class="hero__city">Омск</p>
+        <ul class="hero__features">
+          <li class="hero__feature">Тренажёрный зал</li>
+          <li class="hero__feature">Групповые занятия</li>
+          <li class="hero__feature">Кардио-зона</li>
+        </ul>
+        <h1 class="hero__title">Фитнес центр</h1>
+        <a class="hero__button" href="#price-section">Купить абонемент</a>
+        <img class="hero__img" src="" alt="Наш лучший тренер.">
+      </div>
+    </section>
+
     <!-- пример использования спрайта -->
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
     <div data-test="about">about</div>
-    <div data-test="price">price</div>
+    <div data-test="price" id="price-section">price</div>
     <div data-test="games">games</div>
     <div data-test="juri">juri</div>
     <div data-test="features">features</div>
