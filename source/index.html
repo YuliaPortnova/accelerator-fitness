@@ -17,40 +17,52 @@
     <link rel="apple-touch-icon" href="favicons/icon-180.png"> -->
   </head>
 
-  <body class="page-body">
-    <section class="hero" data-test="hero">
-      <div class="hero__header">
-        <img class="hero__logo" src="" alt="Логотип фитнес клуба.">
-        <a class="hero__phone" href="tel:88005555555">8 800 555-55-55</a>
+  <body class="page">
+    <main class="page__main">
+      <div class="header-hero" data-test="hero">
+        <header class="hero__header header">
+          <div class="header__container page__container">
+            <img class="header__logo" src="img/content/logo.svg" alt="Логотип фитнес клуба.">
+            <a class="header__phone" href="tel:88005555555">8 800 555-55-55</a>
+          </div>
+        </header>
+        <section class="hero">
+          <div class="hero__container page__container">
+            <p class="hero__city">Омск</p>
+            <ul class="hero__features">
+              <li class="hero__feature">Тренажёрный зал</li>
+              <li class="hero__feature">Групповые занятия</li>
+              <li class="hero__feature">Кардио-зона</li>
+            </ul>
+            <h1 class="hero__title">Фитнес центр</h1>
+            <a class="hero__button" href="#price-section">Купить абонемент</a>
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/content/hero-trainer-desktop@1x.webp 1x, img/content/hero-trainer-desktop@2x.webp 2x" width="500" height="524">
+              <source type="image/webp" srcset="img/content/hero-trainer-tablet@1x.webp 1x, img/content/hero-trainer-tablet@2x.webp 2x" width="324" height="390">
+              <source media="(min-width: 1366px)" srcset="img/content/hero-trainer-desktop@1x.jpg 1x, img/content/hero-trainer-desktop@2x.jpg 2x" width="500" height="524">
+              <img class="hero__img" src="img/content/hero-trainer-tablet@1x.jpg" srcset="img/content/hero-trainer-tablet@2x.jpg 2x" width="324" height="390" alt="Наш лучший тренер.">
+            </picture>
+          </div>
+        </section>
       </div>
-      <div class="hero__content">
-        <p class="hero__city">Омск</p>
-        <ul class="hero__features">
-          <li class="hero__feature">Тренажёрный зал</li>
-          <li class="hero__feature">Групповые занятия</li>
-          <li class="hero__feature">Кардио-зона</li>
-        </ul>
-        <h1 class="hero__title">Фитнес центр</h1>
-        <a class="hero__button" href="#price-section">Купить абонемент</a>
-        <img class="hero__img" src="" alt="Наш лучший тренер.">
-      </div>
-    </section>
 
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <div data-test="about">about</div>
-    <div data-test="price" id="price-section">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+
+      <div data-test="about">about</div>
+      <!-- пример использования спрайта -->
+      <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+      <svg>
+        <use href="/__spritemap#sprite-user"></use>
+      </svg>
+      <div data-test="price" id="price-section">price</div>
+      <div data-test="games">games</div>
+      <div data-test="juri">juri</div>
+      <div data-test="features">features</div>
+      <div data-test="offers">offers</div>
+      <div data-test="faq">faq</div>
+      <div data-test="reviews">reviews</div>
+      <div data-test="form">form</div>
+    </main>
+    <footer data-test="footer">footer</footer>
     <script type="module" src="js/main.js"></script>
   </body>
 
