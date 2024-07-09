@@ -20,15 +20,17 @@
 }
 
 .page__container {
-  max-width: 1160px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 
   @media (min-width: $vp-768) {
+    width: 768px;
     padding: 0 45px;
   }
 
   @media (min-width: $vp-1366) {
+    max-width: 1160px;
     padding: 0 103px;
   }
 }

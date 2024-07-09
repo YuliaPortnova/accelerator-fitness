@@ -1,0 +1,36 @@
+.header__container {
+  display: flex;
+  padding-top: 11px;
+  padding-bottom: 16px;
+}
+
+.header__phone {
+  margin-left: auto;
+  padding: 4px 0;
+  border-bottom: 1px solid transparent;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: $color-white;
+  text-decoration: none;
+  transition: color 0.4s ease;
+
+  &:hover {
+    color: rgba($color-additional, 0.5);
+  }
+
+  &:focus {
+    color: $color-additional;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  &--disabled {
+    pointer-events: none;
+    color: rgba($color-white-additional, 0.5);
+  }
+}
