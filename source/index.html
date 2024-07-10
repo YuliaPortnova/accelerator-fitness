@@ -47,9 +47,37 @@
           </div>
         </section>
       </div>
-
-
-      <div data-test="about">about</div>
+      <section class="about" data-test="about">
+        <div class="about__container page__container">
+          <h2 class="visually-hidden">О нас.</h2>
+          <h3 class="about__title title">Тренажёрный зал</h3>
+          <p class="about__description">Просторный зал площадью 900 кв/м</p>
+          <p class="about__text">Supergym – самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для&nbsp;укрепления тела и&nbsp;здоровья. Тренажёрный зал&nbsp;оснащён всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
+        </div>
+        <div class="about__img-container">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)" srcset="img/content/hero-trainer-desktop@1x.webp 1x, img/content/hero-trainer-desktop@2x.webp 2x" width="660" height="400">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero-trainer-tablet@1x.webp 1x, img/content/hero-trainer-tablet@2x.webp 2x" width="671" height="345">
+            <source type="image/webp" srcset="img/content/hero-trainer-tablet@1x.webp 1x, img/content/hero-trainer-tablet@2x.webp 2x" width="320" height="280">
+            <source media="(min-width: 1366px)" srcset="img/content/hero-trainer-desktop@1x.jpg 1x, img/content/hero-trainer-desktop@2x.jpg 2x" width="660" height="400">
+            <source media="(min-width: 768px)" srcset="img/content/hero-trainer-tablet@1x.jpg 1x, img/content/hero-trainer-tablet@2x.jpg 2x" width="671" height="345">
+            <img class="about__img" src="img/content/hero-trainer-tablet@1x.jpg" srcset="img/content/hero-trainer-tablet@2x.jpg 2x" width="320" height="280" alt="Просторный тренажерный зал.">
+          </picture>
+        </div>
+        <div class="about__video">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)" srcset="img/content/preview-desktop@1x.webp 1x, img/content/preview-desktop@2x.webp 2x" width="360" height="230">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/previewr-tablet@1x.webp 1x, img/content/preview-tablet@2x.webp 2x" width="270" height="170">
+            <source type="image/webp" srcset="img/content/preview-tablet@1x.webp 1x, img/content/preview-tablet@2x.webp 2x" width="320" height="170">
+            <source media="(min-width: 1366px)" srcset="img/content/preview-desktop@1x.jpg 1x, img/content/preview-desktop@2x.jpg 2x" width="360" height="230">
+            <source media="(min-width: 768px)" srcset="img/content/preview-tablet@1x.jpg 1x, img/content/preview-tablet@2x.jpg 2x" width="270" height="170">
+            <img class="about__preview" src="img/content/preview-tablet@1x.jpg" srcset="img/content/preview-tablet@2x.jpg 2x" width="320" height="170" alt="Видео о нашем фитнес центре.">
+          </picture>
+          <button class="about__video-button" type="button">
+            <span class="visually-hidden">Смотреть видео.</span>
+          </button>
+        </div>
+      </section>
       <!-- пример использования спрайта -->
       <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
       <svg>
