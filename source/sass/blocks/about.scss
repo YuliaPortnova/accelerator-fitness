@@ -56,17 +56,6 @@
     background-color: #14367a;
     opacity: 0.5;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: calc(50% - 5px);
-    left: calc(50% - 4px);
-    width: 0;
-    height: 0;
-    border: 5px solid transparent;
-    border-left: 9px solid $color-white;
-  }
 }
 
 .about__video img {
@@ -83,6 +72,28 @@
   border: 2px solid rgba($color-red-banners, 0.2);
   background-color: transparent;
   border-radius: 50%;
+  cursor: pointer;
+  transition: border-color 0.4s ease;
+
+  &:hover {
+    border-color: rgba($color-primary, 0.6);
+  }
+
+  &:focus {
+    border-color: $color-primary;
+    outline: none;
+  }
+
+  &:active {
+    border-color: $color-primary;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    border-color: $color-primary;
+    background-color: $color-white;
+    pointer-events: none;
+  }
 
   &::before {
     content: "";
@@ -93,6 +104,56 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-image: linear-gradient(to right, #ed0233 0%, #003eb7 100%);
+    background-color: #801e70;
     border-radius: 50%;
+    transition: background-color 0.4s ease, transform 0.4s ease;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(50% - 4px);
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-left: 9px solid $color-white;
+    transition: border-left-color 0.8s ease;
+  }
+}
+
+.about__video-button:hover::before {
+  background-image: none;
+  background-color: $color-white;
+}
+
+.about__video-button:focus::before {
+  background-image: none;
+  background-color: #c8c9cc;
+}
+
+.about__video-button:active::before {
+  transform: translate(-50%, -50%) scale(0.8);
+  background-image: none;
+  background-color: $color-white;
+}
+
+.about__video-button:disabled::before {
+  background-image: none;
+  background-color: $color-white;
+}
+
+.about__video-button:hover::after {
+  border-left-color: $color-primary;
+  opacity: 0.6;
+}
+
+.about__video-button:focus::after,
+.about__video-button:active::after {
+  border-left-color: $color-primary;
+  opacity: 1;
+}
+
+.about__video-button:disabled::after {
+  border-left-color: $color-primary;
 }
