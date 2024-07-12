@@ -3,12 +3,28 @@
   padding-bottom: 40px;
 
   @media (min-width: $vp-768) {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 120px;
     text-align: center;
+  }
+
+  @media (min-width: $vp-1366) {
+    display: grid;
+    grid-template-columns: 355px 660px;
+    gap: 30px 145px;
+    padding: 120px 103px 240px;
+    text-align: left;
   }
 }
 
 .about__container {
   padding-bottom: 26px;
+
+  @media (min-width: $vp-1366) {
+    width: auto;
+    padding: 0;
+  }
 }
 
 .about__title {
@@ -17,17 +33,31 @@
   @media (min-width: $vp-768) {
     margin-bottom: 20px;
   }
+
+  @media (min-width: $vp-1366) {
+    margin-bottom: 25px;
+  }
 }
 
 .about p {
-  margin: 0 0 10px;
+  margin: 0 auto 10px;
+  max-width: 502px;
 }
 
 .about .about__description {
-  margin: 0 0 36px;
+  margin-bottom: 36px;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $vp-1366) {
+    font-size: 22px;
+    margin-bottom: 95px;
+  }
 }
 
 .about p:last-of-type {
@@ -39,7 +69,18 @@
 }
 
 .about__img-container {
-  margin: 0 0 36px;
+  margin: 0 auto 36px;
+
+  @media (min-width: $vp-768) {
+    max-width: 768px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (min-width: $vp-1366) {
+    max-width: 660px;
+    padding: 0;
+  }
 }
 
 .about__img-container img {
@@ -55,6 +96,17 @@
     inset: 0;
     background-color: #14367a;
     opacity: 0.5;
+  }
+
+  @media (min-width: $vp-768) {
+    position: absolute;
+    bottom: 71px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $vp-1366) {
+    bottom: 161px;
   }
 }
 
@@ -74,6 +126,11 @@
   border-radius: 50%;
   cursor: pointer;
   transition: border-color 0.4s ease;
+
+  @media (min-width: $vp-1366) {
+    width: 100px;
+    height: 100px;
+  }
 
   &:hover {
     border-color: rgba($color-primary, 0.6);
@@ -107,6 +164,11 @@
     background-color: #801e70;
     border-radius: 50%;
     transition: background-color 0.4s ease, transform 0.4s ease;
+
+    @media (min-width: $vp-1366) {
+      width: 72px;
+      height: 72px;
+    }
   }
 
   &::after {
@@ -119,6 +181,17 @@
     border: 5px solid transparent;
     border-left: 9px solid $color-white;
     transition: border-left-color 0.8s ease;
+
+    @media (min-width: $vp-768) {
+      left: calc(50% - 3px);
+    }
+
+    @media (min-width: $vp-1366) {
+      top: calc(50% - 7px);
+      left: calc(50% - 4px);
+      border: 7px solid transparent;
+      border-left: 13px solid $color-white;
+    }
   }
 }
 
@@ -156,4 +229,8 @@
 
 .about__video-button:disabled::after {
   border-left-color: $color-primary;
+}
+
+.about__video-iframe {
+  display: none;
 }
