@@ -1,0 +1,160 @@
+.price {
+  background-color: $color-white-additional;
+}
+
+.price__container {
+  padding-top: 40px;
+}
+
+.price__title {
+  margin: 0 0 24px;
+
+  text-align: center;
+}
+
+.price__tabs {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 30px;
+  padding: 0;
+
+  list-style-type: none;
+
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.price__tab-button {
+  position: relative;
+
+  padding: 7px 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-light;
+
+  background-color: transparent;
+  border: none;
+
+  --line-color: transparent;
+
+  &--active {
+    color: $color-primary;
+
+    --line-color: #d10a42;
+  }
+
+  &:hover {
+    color: rgba(16, 38, 84, 0.7);
+
+    --line-color: #787878;
+  }
+
+  &:focus {
+    color: $color-primary;
+
+    outline: none;
+
+    --line-color: #102654;
+  }
+
+  &:active {
+    color: $color-primary;
+
+    --line-color: #ed0233;
+  }
+
+  &:disabled {
+    color: rgba($color-primary, 0.3);
+
+    pointer-events: none;
+
+    --line-color: #b2baca;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    left: 0;
+
+    height: 2px;
+
+    background-color: var(--line-color);
+  }
+}
+
+.price__rates {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  gap: 35px;
+}
+
+.price__rate {
+  padding: 43px 35px;
+
+  text-align: center;
+
+  background-color: $color-white;
+  border: 7px solid transparent;
+}
+
+.price__rate-title {
+  margin: 0 0 18px;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.price__rate-description {
+  margin: 0 0 66px;
+}
+
+.price__rate-price {
+  position: relative;
+  z-index: 1;
+
+  margin: 0 0 18px;
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  color: $color-text-accent;
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    top: -49px;
+    right: 0;
+    left: 0;
+    z-index: -1;
+
+    font-size: 80px;
+    line-height: 120px;
+    color: $price-shadow;
+
+    opacity: 0.48;
+  }
+}
+
+.price__ruble {
+  width: 24px;
+  height: 33px;
+  margin-left: 10px;
+
+  object-fit: fill;
+}
+
+.price__rate-button {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}

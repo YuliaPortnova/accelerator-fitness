@@ -40,4 +40,38 @@
     cursor: default;
     pointer-events: none;
   }
+
+  &--white {
+    color: $color-primary;
+    border-color: $color-primary;
+    transition: color 0.6s ease, border-color 0.4s ease;
+
+    &:hover {
+      background-color: #662480;
+      background-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+      background-origin: border-box;
+      color: $color-white;
+      border-color: transparent;
+    }
+
+    &:focus {
+      background-color: transparent;
+      background-image: linear-gradient(97.05deg, rgba(237, 2, 51, 0.8) 17.6%, rgba(0, 62, 183, 0.8) 95.31%);
+      color: $color-white;
+    }
+
+    &:active {
+      background-color: #662480;
+      background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+      color: rgba($color-white, 0.7);
+      border-color: transparent;
+    }
+
+    &:disabled,
+    &--disabled {
+      opacity: 0.3;
+      letter-spacing: 0.05em;
+      color: rgba($color-primary, 0.3)
+    }
+  }
 }
