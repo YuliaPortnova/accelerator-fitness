@@ -13,7 +13,9 @@
 
   @media (min-width: $vp-1366) {
     display: grid;
-    padding: 120px 103px 240px;
+    width: 1366px;
+    margin: 0 auto;
+    padding: 120px 103px 204px;
 
     text-align: left;
 
@@ -98,8 +100,8 @@
   position: relative;
 
   max-width: 320px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 
   &::before {
     content: "";
@@ -120,8 +122,9 @@
   }
 
   @media (min-width: $vp-1366) {
+    bottom: 125px;
+
     max-width: 360px;
-    bottom: 161px;
   }
 }
 

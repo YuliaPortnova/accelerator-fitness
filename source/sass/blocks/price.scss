@@ -15,14 +15,30 @@
       width: 301px;
       height: 328px;
 
-      background-image: url("../../img/background/weights-tablet@1x.png");
+      background-image: url("../img/background/weights-tablet@1x.png");
       background-repeat: no-repeat;
       background-position: center;
       transform: rotate(120deg);
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/background/weights-tablet@2x.png");
+        background-image: url("../img/background/weights-tablet@2x.png");
         background-size: 325px auto;
+      }
+    }
+
+    @media (min-width: $vp-1366) {
+      right: 0;
+      bottom: 34px;
+      left: auto;
+
+      height: 380px;
+
+      background-image: url("../img/background/weights-desktop@1x.png");
+      transform: rotate(0);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/weights-desktop@2x.png");
+        background-size: 302px auto;
       }
     }
   }
@@ -34,6 +50,10 @@
   @media (min-width: $vp-768) {
     padding: 60px 194px;
   }
+
+  @media (min-width: $vp-1366) {
+    padding: 100px 110px;
+  }
 }
 
 .price__title {
@@ -44,6 +64,11 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 29px;
+  }
+
+  @media (min-width: $vp-1366) {
+    max-width: 350px;
+    margin-bottom: 14px;
   }
 }
 
@@ -62,6 +87,11 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 52px;
+  }
+
+  @media (min-width: $vp-1366) {
+    max-width: 350px;
+    margin-bottom: 47px;
   }
 }
 
@@ -83,6 +113,11 @@
   @media (min-width: $vp-768) {
     font-size: 18px;
     line-height: 18px;
+  }
+
+  @media (min-width: $vp-1366) {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   &--active {
@@ -149,6 +184,11 @@
 
     gap: 54px;
   }
+
+  @media (min-width: $vp-1366) {
+    gap: 54px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .price__rate {
@@ -167,6 +207,12 @@
     width: 366px;
     min-height: 446px;
     padding: 58px;
+  }
+
+  @media (min-width: $vp-1366) {
+    width: 346px;
+    min-height: 434px;
+    padding: 59px 58px;
   }
 
   &::before {
@@ -201,6 +247,13 @@
     font-size: 24px;
     line-height: 24px;
   }
+
+  @media (min-width: $vp-1366) {
+    margin-bottom: 15px;
+
+    font-size: 26px;
+    line-height: 26px;
+  }
 }
 
 .price__rate-description {
@@ -208,6 +261,10 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 82px;
+  }
+
+  @media (min-width: $vp-1366) {
+    margin-bottom: 79px;
   }
 }
 
@@ -227,6 +284,10 @@
 
     font-size: 60px;
     line-height: 90px;
+  }
+
+  @media (min-width: $vp-1366) {
+    margin-bottom: 16px;
   }
 
   &::before {
@@ -251,6 +312,12 @@
 
       opacity: 0.47;
     }
+  }
+}
+
+.price__rate:nth-child(2n) .price__rate-price {
+  @media (min-width: $vp-1366) {
+    margin-bottom: 17px;
   }
 }
 
