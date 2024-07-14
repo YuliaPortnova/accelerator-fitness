@@ -1,0 +1,120 @@
+.games {
+  padding: 25px 15px;
+}
+
+.games__container {
+  position: relative;
+
+  display: grid;
+  align-items: start;
+  width: 290px;
+  padding: 40px 40px 330px;
+
+  color: $color-white;
+
+  background-color: $color-red-banners;
+
+  gap: 16px 37px;
+  grid-template-columns: 117px 56px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 290px;
+    height: 290px;
+
+    background-color: $color-additional;
+    background-image: url("../img/background/games-mobile@1x.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/games-mobile@2x.jpg");
+      background-size: 290px auto;
+    }
+  }
+}
+
+.games__title {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 54px;
+  font-family: $second-family;
+  text-transform: uppercase;
+}
+
+.games__schedule {
+  display: grid;
+  margin: 0;
+
+  gap: 5px;
+}
+
+.games__schedule-group {
+  display: grid;
+
+  gap: 5px;
+}
+
+.games__schedule-title {
+  position: relative;
+
+  font-size: 16px;
+  line-height: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+
+    width: 100%;
+    width: 56px;
+    height: 1px;
+
+    background-color: $color-white;
+  }
+}
+
+.games__schedule-date {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.games__schedule-date span {
+  display: inline-grid;
+  width: 42px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.games__schedule-date time {
+  display: flex;
+
+  gap: 4px;
+}
+
+.games__text {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+
+  grid-column: 1/-1;
+}
+
+.games__button {
+  grid-column: 1/-1;
+}
