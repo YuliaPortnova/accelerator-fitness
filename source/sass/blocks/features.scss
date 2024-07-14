@@ -1,0 +1,44 @@
+.features {
+  background-color: $color-white-additional;
+}
+
+.features__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.features__title {
+  margin: 0 0 40px;
+
+  text-align: center;
+}
+
+.features__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  text-align: center;
+
+  gap: 35px;
+}
+
+.features__list li {
+  display: grid;
+
+  gap: 12px;
+}
+
+.features__list li:nth-child(3n) {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  color: $color-white;
+
+  background-color: $color-additional;
+}
+
+.features__list div {
+  display: grid;
+}
