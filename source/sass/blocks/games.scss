@@ -1,5 +1,9 @@
 .games {
   padding: 25px 15px;
+
+  @media (min-width: $vp-768) {
+    padding: 60px 45px;
+  }
 }
 
 .games__container {
@@ -16,6 +20,15 @@
 
   gap: 16px 37px;
   grid-template-columns: 117px 56px;
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+    padding-right: 408px;
+    padding-bottom: 40px;
+
+    gap: 10px 20px;
+    grid-template-columns: 100px 100px;
+  }
 
   &::after {
     content: "";
@@ -36,6 +49,23 @@
       background-image: url("../img/background/games-mobile@2x.jpg");
       background-size: 290px auto;
     }
+
+    @media (min-width: $vp-768) {
+      top: 0;
+      right: 0;
+      bottom: initial;
+      left: initial;
+
+      width: 378px;
+      height: 348px;
+
+      background-image: url("../img/background/games-tablet@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/games-tablet@2x.jpg");
+        background-size: 378px auto;
+      }
+    }
   }
 }
 
@@ -54,12 +84,20 @@
   margin: 0;
 
   gap: 5px;
+
+  @media (min-width: $vp-768) {
+    gap: 10px;
+  }
 }
 
 .games__schedule-group {
   display: grid;
 
   gap: 5px;
+
+  @media (min-width: $vp-768) {
+    gap: 4px;
+  }
 }
 
 .games__schedule-title {
@@ -68,17 +106,30 @@
   font-size: 16px;
   line-height: 20px;
 
+  @media (min-width: $vp-768) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   &::after {
     content: "";
     position: absolute;
     bottom: -3px;
     left: 0;
 
-    width: 100%;
     width: 56px;
     height: 1px;
 
     background-color: $color-white;
+
+    @media (min-width: $vp-768) {
+      bottom: -2px;
+
+      width: 100px;
+
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -98,12 +149,23 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
+
+  @media (min-width: $vp-768) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .games__schedule-date time {
   display: flex;
 
   gap: 4px;
+
+  @media (min-width: $vp-768) {
+    align-items: center;
+
+    gap: 6px;
+  }
 }
 
 .games__text {
@@ -113,8 +175,18 @@
   line-height: 20px;
 
   grid-column: 1/-1;
+
+  @media (min-width: $vp-768) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .games__button {
   grid-column: 1/-1;
+
+  @media (min-width: $vp-768) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
