@@ -7,13 +7,13 @@
   padding-bottom: 40px;
 
   @media (min-width: $vp-768) {
-    padding-top: 61px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 
   @media (min-width: $vp-1366) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 101px;
+    padding-bottom: 101px;
   }
 }
 
@@ -23,6 +23,10 @@
   text-align: center;
 
   @media (min-width: $vp-768) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $vp-1366) {
     margin-bottom: 49px;
   }
 }
@@ -64,7 +68,9 @@
   }
 
   @media (min-width: $vp-1366) {
+    position: relative;
     display: grid;
+    align-content: start;
     min-height: 110px;
 
     gap: 43px;
@@ -72,11 +78,37 @@
   }
 }
 
+.features__list li:nth-child(4) {
+  @media (min-width: $vp-768) {
+    gap: 16px;
+  }
+
+  @media (min-width: $vp-1366) {
+    gap: 43px;
+  }
+}
+
+.features__list li:nth-child(-n+2) {
+  &::after {
+    @media (min-width: $vp-1366) {
+      content: "";
+      position: absolute;
+      bottom: -41px;
+      left: 0;
+      right: 0;
+      background-color: rgba(209, 10, 66, 0.2);
+      height: 2px;
+    }
+  }
+}
+
 .features__list div {
   display: grid;
 
   @media (min-width: $vp-1366) {
-    gap: 22px;
+    justify-content: start;
+    align-content: start;
+
   }
 
   &:nth-child(2) {
@@ -84,6 +116,10 @@
 
     @media (min-width: $vp-768) {
       gap: 0;
+    }
+
+    @media (min-width: $vp-1366) {
+      gap: 8px;
     }
   }
 }
@@ -168,8 +204,13 @@
   }
 
   @media (min-width: $vp-1366) {
+    width: 360px;
+    padding: 58px 40px;
+
+    gap: 11px;
     grid-column: 2;
-    grid-row: 2/span 2;
+    grid-row: 1/span 2;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -197,5 +238,12 @@
 
     font-size: 24px;
     line-height: 24px;
+  }
+
+  @media (min-width: $vp-1366) {
+    margin-bottom: 18px;
+
+    font-size: 26px;
+    line-height: 26px;
   }
 }
