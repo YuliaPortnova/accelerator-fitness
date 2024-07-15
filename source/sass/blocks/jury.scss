@@ -1,3 +1,11 @@
 .jury {
   min-height: 405px;
+
+  @media (min-width: $vp-768) {
+    min-height: 490px;
+  }
+
+  @media (min-width: $vp-1366) {
+    min-height: 600px;
+  }
 }
