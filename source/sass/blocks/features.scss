@@ -3,7 +3,7 @@
 }
 
 .features__container {
-  padding-top: 40px;
+  padding-top: 41px;
   padding-bottom: 40px;
 }
 
@@ -26,19 +26,76 @@
 
 .features__list li {
   display: grid;
+  padding: 0 30px;
 
   gap: 12px;
+}
+
+.features__list div {
+  display: grid;
+
+  &:nth-child(2) {
+    gap: 12px;
+  }
+}
+
+.features__list li:not(:nth-child(3n)) b {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+
+  background-image: $gradient-text;
+  -webkit-background-clip: text;
+          background-clip: text;
+
+  justify-self: center;
+  -webkit-text-fill-color: transparent;
+          text-fill-color: transparent;
+}
+
+.features__list span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-blue-description;
+}
+
+.features__list h3 {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: $color-primary;
+}
+
+.features__list p {
+  margin: 0;
 }
 
 .features__list li:nth-child(3n) {
   margin-top: 5px;
   margin-bottom: 5px;
+  padding: 30px 60px 40px;
 
   color: $color-white;
 
   background-color: $color-additional;
+
+  gap: 5px;
+  box-shadow: 280px 0 0 0 $color-additional, -280px 0 0 0 $color-additional;
 }
 
-.features__list div {
-  display: grid;
+.features__list li:nth-child(3n) b {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.features__list li:nth-child(3n) h3 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: $color-white;
 }
