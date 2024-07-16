@@ -1,0 +1,39 @@
+.card-offer {
+  position: relative;
+  z-index: 1;
+
+  width: 290px;
+  padding: 27px 27px 28px;
+
+  color: $color-additional;
+
+  background-image: $gradient;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    z-index: -1;
+
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+
+    background-color: $color-white;
+  }
+}
+
+.card-offer h3 {
+  margin: 0 0 20px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.card-offer p {
+  margin: 0 0 17px;
+}
+
+.card-offer__link {
+  color: $color-additional;
+}

@@ -1,0 +1,79 @@
+.link {
+  padding: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  border: 1px solid transparent;
+
+  transition: opacity 0.3s ease, border-color 0.4s ease;
+
+  text-decoration-color: $color-divider;
+  text-underline-offset: 7px;
+
+  &:hover {
+    opacity: 0.8;
+
+    text-decoration-color: $color-additional;
+  }
+
+  &:focus {
+    text-decoration: none;
+
+    border-color: currentColor;
+    outline: none;
+  }
+
+  &:active {
+    text-decoration: underline;
+
+    border-color: transparent;
+    opacity: 1;
+
+    text-decoration-color: $color-additional;
+  }
+
+  &--disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+
+    text-decoration-color: $color-additional;
+  }
+
+  &--white {
+    text-decoration-color: $color-white;
+
+    &:hover {
+      opacity: 0.8;
+
+      text-decoration-color: $color-white;
+    }
+
+    &:focus {
+      text-decoration: none;
+
+      border-color: currentColor;
+      outline: none;
+    }
+
+    &:active {
+      text-decoration: underline;
+
+      border-color: transparent;
+      opacity: 1;
+
+      text-decoration-color: $color-white;
+    }
+
+    &--disabled {
+      opacity: 0.5;
+
+      pointer-events: none;
+
+      text-decoration-color: $color-white;
+    }
+  }
+}
