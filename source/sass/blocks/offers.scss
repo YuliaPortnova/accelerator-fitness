@@ -1,12 +1,22 @@
 .offers {
   padding-top: 42px;
   padding-bottom: 40px;
+
+  @media (min-width: $vp-768) {
+    width: 768px;
+    margin: 0 auto;
+    padding: 61px 45px 60px;
+  }
 }
 
 .offers__title {
   margin: 0 0 39px;
 
   text-align: center;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 35px;
+  }
 }
 
 .offers__list {
@@ -18,18 +28,36 @@
   text-align: center;
 
   gap: 30px;
+
+  @media (min-width: $vp-768) {
+    text-align: left;
+
+    gap: 35px 30px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .offers__wrapper {
   position: relative;
 
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   padding-top: 30px;
   padding-bottom: 391px;
 
   color: $color-white;
 
   background-color: $color-red-banners;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 462px;
+    margin-bottom: 0;
+    padding: 40px 425px 36px 25px;
+
+    grid-column: 1/-1;
+  }
 
   &::after {
     content: "";
@@ -49,6 +77,22 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/girl-mobile@2x.jpg");
     }
+
+    @media (min-width: $vp-768) {
+      top: 0;
+      right: 0;
+      bottom: initial;
+      left: initial;
+
+      width: 400px;
+      height: 462px;
+
+      background-image: url("../img/background/girl-tablet@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/girl-tablet@2x.jpg");
+      }
+    }
   }
 }
 
@@ -59,6 +103,13 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 22px;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 20px;
+
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .offers__wrapper span {
@@ -69,6 +120,13 @@
   font-weight: 700;
   font-size: 64px;
   line-height: 64px;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 40px;
+
+    font-size: 70px;
+    line-height: 70px;
+  }
 }
 
 .offers__wrapper p {
@@ -77,12 +135,27 @@
 
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $vp-768) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .offers__link {
   color: $color-white;
+
+  @media (min-width: $vp-768) {
+    margin-top: auto;
+    margin-left: -11px;
+  }
 }
 
 .offers__article {
   margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    width: 100%;
+    margin: 0;
+  }
 }

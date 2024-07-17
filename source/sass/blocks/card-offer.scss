@@ -9,6 +9,15 @@
 
   background-image: $gradient;
 
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-direction: column;
+    min-height: 188px;
+    padding-top: 26px;
+    padding-bottom: 23px;
+    align-items: flex-start;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -25,15 +34,33 @@
 
 .card-offer h3 {
   margin: 0 0 20px;
+
   font-weight: 700;
   font-size: 22px;
   line-height: 22px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 9px;
+
+    font-size: 26px;
+    line-height: 26px;
+  }
 }
 
 .card-offer p {
   margin: 0 0 17px;
+
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .card-offer__link {
   color: $color-additional;
+
+  @media (min-width: $vp-768) {
+    margin-top: auto;
+    margin-left: -11px;
+  }
 }
