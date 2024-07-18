@@ -7,6 +7,11 @@
     margin: 0 auto;
     padding: 61px 45px 61px;
   }
+
+  @media (min-width: $vp-1366) {
+    width: 1366px;
+    padding: 101px 103px;
+  }
 }
 
 .offers__title {
@@ -16,6 +21,10 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 35px;
+  }
+
+  @media (min-width: $vp-1366) {
+    margin-bottom: 70px;
   }
 }
 
@@ -34,6 +43,18 @@
 
     gap: 35px 30px;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $vp-1366) {
+    align-items: end;
+
+    gap: 30px 40px;
+  }
+}
+
+.offers__item:nth-child(2) {
+  @media (min-width: $vp-1366) {
+    margin-top: 82px;
   }
 }
 
@@ -57,6 +78,14 @@
     padding: 40px 425px 35px 25px;
 
     grid-column: 1/-1;
+  }
+
+  @media (min-width: $vp-1366) {
+    min-height: 460px;
+    padding: 40px 325px 35px 45px;
+
+    grid-column: initial;
+    grid-row: 1/span 2;
   }
 
   &::after {
@@ -93,6 +122,17 @@
         background-image: url("../img/background/girl-tablet@2x.jpg");
       }
     }
+
+    @media (min-width: $vp-1366) {
+      width: 280px;
+      height: 460px;
+
+      background-image: url("../img/background/girl-desktop@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/girl-desktop@2x.jpg");
+      }
+    }
   }
 }
 
@@ -109,6 +149,11 @@
 
     font-size: 24px;
     line-height: 24px;
+  }
+
+  @media (min-width: $vp-1366) {
+    font-size: 26px;
+    line-height: 26px;
   }
 }
 
