@@ -5,12 +5,21 @@
 .faq__container {
   padding-top: 72px;
   padding-bottom: 70px;
+
+  @media (min-width: $vp-768) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .faq__title {
   margin: 0 0 34px;
 
   text-align: center;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 45px;
+  }
 }
 
 .faq__buttons-list {
@@ -22,6 +31,12 @@
 
   gap: 10px;
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $vp-768) {
+    padding-bottom: 45px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .faq__button {
@@ -36,6 +51,13 @@
   border: none;
   box-shadow: inset 0 0 0 1px rgba($color-primary, 0.2);
   cursor: pointer;
+
+  @media (min-width: $vp-768) {
+    padding: 18px 28px;
+
+    font-size: 18px;
+    line-height: 18px;
+  }
 
   &:hover {
     box-shadow: inset 0 0 0 1px $color-primary;
@@ -101,17 +123,30 @@
   list-style-type: none;
 
   gap: 1px;
+
+  @media (min-width: $vp-768) {
+    gap: 0;
+  }
 }
 
 .faq__questions-item {
   position: relative;
 
   border-bottom: 1px solid $color-divider;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+    padding-top: 23px;
+    padding-bottom: 23px;
+
+    gap: 10px;
+  }
 }
 
 .faq__question {
   position: relative;
 
+  width: 100%;
   margin: 0;
   padding: 5px 52px 5px 0;
 
@@ -121,6 +156,12 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $vp-768) {
+    padding-top: 0;
+    padding-right: 118px;
+    padding-bottom: 0;
+  }
 }
 
 .faq__question span:first-of-type {
@@ -134,6 +175,11 @@
   line-height: 20px;
 
   @media (min-width: $vp-768) {
+    display: grid;
+    align-items: center;
+    min-height: 40px;
+    padding: 0;
+
     font-size: 22px;
     line-height: 22px;
   }
@@ -154,6 +200,9 @@
   line-height: 20px;
 
   @media (min-width: $vp-768) {
+    margin-bottom: 0;
+    padding-right: 118px;
+
     font-size: 18px;
     line-height: 24px;
   }
@@ -181,6 +230,11 @@
 
   transition: background-color 0.4s ease;
 
+  @media (min-width: $vp-768) {
+    width: 40px;
+    height: 40px;
+  }
+
   &::before {
     content: "";
 
@@ -190,6 +244,10 @@
     background-color: $color-additional;
 
     transition: background-color 0.6s ease;
+
+    @media (min-width: $vp-768) {
+      width: 20px;
+    }
   }
 
   &::after {
@@ -205,6 +263,10 @@
     transform: translate(-50%, -50%);
 
     transition: background-color 0.6s ease;
+
+    @media (min-width: $vp-768) {
+      height: 20px;
+    }
   }
 }
 
