@@ -5,6 +5,10 @@
   line-height: 32px;
   color: $color-primary;
 
+  &--white {
+    color: $color-white;
+  }
+
   @media (min-width: $vp-768) {
     font-size: 42px;
     line-height: 42px;
