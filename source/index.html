@@ -11,7 +11,7 @@
   <link rel="preload" href="fonts/alumni-sans-600.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-300.woff2" as="font" crossorigin="anonymous">
   <title>SUPERGYM</title>
-  <meta name="description" content="Первый проект акселератора Фитнес центр.">
+  <meta name="description" content="Первый проект акселератора Фитнес-центр.">
   <!-- <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="favicons/icon.png">
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -73,7 +73,7 @@
           <source type="image/webp" srcset="img/content/preview-mobile@1x.webp 1x, img/content/preview-mobile@2x.webp 2x" width="320" height="170">
           <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/content/preview-desktop@1x.jpg 1x, img/content/preview-desktop@2x.jpg 2x" width="360" height="230">
           <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/preview-tablet@1x.jpg 1x, img/content/preview-tablet@2x.jpg 2x" width="270" height="170">
-          <img class="about__preview" src="img/content/preview-mobile@1x.jpg" srcset="img/content/preview-mobile@2x.jpg 2x" width="320" height="170" alt="Видео о нашем фитнес центре.">
+          <img class="about__preview" src="img/content/preview-mobile@1x.jpg" srcset="img/content/preview-mobile@2x.jpg 2x" width="320" height="170" alt="Видео о нашем фитнес-центре.">
         </picture>
         <button class="about__video-button" type="button">
           <span class="visually-hidden">Смотреть видео.</span>
@@ -447,13 +447,53 @@
       </section>
     </div>
   </main>
+  <footer data-test="footer">
+    <div class="page__container footer__container">
+      <img class="footer__logo" src="img/content/logo.svg" alt="Логотип фитнес-клуба." width="100" height="20">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Услуги</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Абонементы</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Акции</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Тренеры</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Расписание</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#" target="_blank" rel="nofollow noopener">
+            <span class="visually-hidden">Наш фитнес-центр во Вконтакте.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--ok" href="#" target="_blank" rel="nofollow noopener">
+            <span class="visually-hidden">Наш фитнес-центр в одноклассниках.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--reddit" href="#" target="_blank" rel="nofollow noopener">
+            <span class="visually-hidden">Наш фитнес-центр в Реддит.</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
   <!-- пример использования спрайта -->
   <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
       <svg>
         <use href="/__spritemap#sprite-user"></use>
       </svg> -->
-  <footer data-test="footer">footer</footer>
   <script type="module" src="js/main.js"></script>
 </body>
 
