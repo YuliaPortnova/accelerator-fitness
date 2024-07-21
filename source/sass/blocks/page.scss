@@ -39,6 +39,13 @@
   flex-grow: 1;
 }
 
+.page__form-address-container {
+  @media (min-width: $vp-1366) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 
 .page__page-footer {
   margin-top: auto;
