@@ -5,6 +5,10 @@
   list-style-type: none;
 
   gap: 20px;
+
+  @media (min-width: $vp-768) {
+    gap: 15px;
+  }
 }
 
 .social__link {
