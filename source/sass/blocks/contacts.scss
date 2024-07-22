@@ -9,7 +9,7 @@
   @media (min-width: $vp-1366) {
     width: 683px;
     margin: 0 auto 0 0;
-    padding: 60px 103px 60px;
+    padding: 60px 103px;
 
     border-top: 1px solid $color-divider;
   }
@@ -93,7 +93,7 @@
   }
 }
 
-.contact__subtitle {
+.contacts__subtitle {
   margin: 0;
 
   font-weight: 400;

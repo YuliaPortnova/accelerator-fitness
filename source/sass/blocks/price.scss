@@ -20,7 +20,7 @@
       background-position: center;
       transform: rotate(120deg);
 
-      @media (min-resolution: 2dppx) {
+      @media (resolution >= 2dppx) {
         background-image: url("../img/background/weights-tablet@2x.png");
         background-size: 325px auto;
       }
@@ -36,7 +36,7 @@
       background-image: url("../img/background/weights-desktop@1x.png");
       transform: rotate(0);
 
-      @media (min-resolution: 2dppx) {
+      @media (resolution >= 2dppx) {
         background-image: url("../img/background/weights-desktop@2x.png");
         background-size: 302px auto;
       }

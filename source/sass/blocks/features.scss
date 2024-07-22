@@ -69,6 +69,7 @@
 
   @media (min-width: $vp-1366) {
     position: relative;
+
     display: grid;
     align-content: start;
     min-height: 110px;
@@ -93,11 +94,13 @@
     @media (min-width: $vp-1366) {
       content: "";
       position: absolute;
+      right: 0;
       bottom: -41px;
       left: 0;
-      right: 0;
-      background-color: rgba(209, 10, 66, 0.2);
+
       height: 2px;
+
+      background-color: rgba(209, 10, 66, 0.2);
     }
   }
 }
@@ -108,7 +111,6 @@
   @media (min-width: $vp-1366) {
     justify-content: start;
     align-content: start;
-
   }
 
   &:nth-child(2) {
@@ -130,12 +132,10 @@
   line-height: 64px;
 
   background-image: $gradient-text;
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
 
   justify-self: center;
   -webkit-text-fill-color: transparent;
-          text-fill-color: transparent;
 
   @media (min-width: $vp-768) {
     font-size: 70px;

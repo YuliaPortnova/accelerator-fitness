@@ -47,33 +47,16 @@
     text-decoration-color: $color-white;
 
     &:hover {
-      opacity: 0.8;
-
       text-decoration-color: $color-white;
-    }
-
-    &:focus {
-      text-decoration: none;
-
-      border-color: currentColor;
-      outline: none;
     }
 
     &:active {
-      text-decoration: underline;
-
-      border-color: transparent;
-      opacity: 1;
-
-      text-decoration-color: $color-white;
-    }
-
-    &--disabled {
-      opacity: 0.5;
-
-      pointer-events: none;
-
       text-decoration-color: $color-white;
     }
   }
+}
+
+
+.link.link--disabled {
+  text-decoration-color: $color-white;
 }

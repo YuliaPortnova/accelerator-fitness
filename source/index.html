@@ -78,7 +78,7 @@
         <button class="about__video-button" type="button">
           <span class="visually-hidden">Смотреть видео.</span>
         </button>
-        <iframe class="about__video-iframe" width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=_OQrCbM0U8dfbgaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        <iframe class="about__video-iframe" width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=_OQrCbM0U8dfbgaU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
       </div>
     </section>
     <section class="price" data-test="price" id="price-section">
@@ -100,18 +100,21 @@
             <h3 class="price__rate-title">С тренером</h3>
             <p class="price__rate-description">12 занятий</p>
             <p class="price__rate-price" data-price="5000">5000<img class="price__ruble" src="/__spritemap#sprite-ruble-view" alt="Знак рубля." width="24" height="34"></p>
+            <!-- Для показа состояния disabled добавьте класс с модификатором disabled ссылке с классом button -->
             <a class="price__rate-button button button--white" href="#">Купить абонемент</a>
           </li>
           <li class="price__rate">
             <h3 class="price__rate-title">Дневной</h3>
             <p class="price__rate-description">с 8:00 до 17:00</p>
             <p class="price__rate-price" data-price="1700">1700<img class="price__ruble" src="/__spritemap#sprite-ruble-view" alt="Знак рубля." width="24" height="34"></p>
+            <!-- Для показа состояния disabled добавьте класс с модификатором disabled ссылке с классом button -->
             <a class="price__rate-button button button--white" href="#">Купить абонемент</a>
           </li>
           <li class="price__rate">
             <h3 class="price__rate-title">Полный день</h3>
             <p class="price__rate-description">с 8:00 до 22:00</p>
             <p class="price__rate-price" data-price="2700">2700<img class="price__ruble" src="/__spritemap#sprite-ruble-view" alt="Знак рубля." width="24" height="34"></p>
+            <!-- Для показа состояния disabled добавьте класс с модификатором disabled ссылке с классом button -->
             <a class="price__rate-button button button--white" href="#">Купить абонемент</a>
           </li>
         </ul>
@@ -193,6 +196,7 @@
     </section>
     <section class="offers" data-test="offers">
       <h2 class="offers__title title">Акции</h2>
+      <!-- Для показа состояния disabled добавьте класс с модификатором disabled ссылке с классом link -->
       <ul class="offers__list">
         <li class="offers__item offers__wrapper">
           <h3>Год</h3>
@@ -369,7 +373,7 @@
       <div class="reviews__container page__container">
         <h2 class="reviews__title title">Отзывы</h2>
         <ul class="reviews__list">
-          <li class="reviews__item review--open">
+          <li class="reviews__item reviews__item--open">
             <div class="reviews__img-container">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/content/review-1-tablet@1x.webp 1x, img/content/review-1-tablet@2x.webp 2x" width="80" height="80">
@@ -402,6 +406,7 @@
           <h2 class="form__title title title--white">Бесплатное занятие</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="form__fieldset">
+              <legend class="visually-hidden">Ваши контактные данные.</legend>
               <!-- Для показа состояния ошибки необходимо добавить модификатор error классу form__input нужного поля -->
               <label class="form__label">
                 <span class="visually-hidden">Имя.</span>
@@ -424,21 +429,21 @@
           <address class="contacts__content">
             <ul class="contacts__list">
               <li class="contacts__item">
-                <p class="contact__subtitle">Адрес:</p>
+                <p class="contacts__subtitle">Адрес:</p>
                 <p class="contacts__text">г. Омск, ул. 60 лет Октября, 7</p>
               </li>
               <li class="contacts__item">
-                <p class="contact__subtitle">График работы:</p>
+                <p class="contacts__subtitle">График работы:</p>
                 <p class="contacts__text">Пн-Вс: с 8:00 до 22:00</p>
               </li>
             </ul>
             <ul class="contacts__list">
               <li class="contacts__item">
-                <p class="contact__subtitle">Телефон:</p>
+                <p class="contacts__subtitle">Телефон:</p>
                 <a class="contacts__text contacts__link" href="tel:+78005555555">8 800 555-55-55</a>
               </li>
               <li class="contacts__item">
-                <p class="contact__subtitle">Email:</p>
+                <p class="contacts__subtitle">Email:</p>
                 <a class="contacts__text contacts__link" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
               </li>
             </ul>
@@ -473,17 +478,17 @@
       <ul class="footer__social social">
         <!-- Для показа состояния disabled добавьте модификатор disabled ссылке с классом social__link -->
         <li class="social__item">
-          <a class="social__link social__link--vk" href="#" target="_blank" rel="nofollow noopener">
+          <a class="social__link social__link--vk" href="#" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Наш фитнес-центр во Вконтакте.</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--ok" href="#" target="_blank" rel="nofollow noopener">
+          <a class="social__link social__link--ok" href="#" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Наш фитнес-центр в одноклассниках.</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--reddit" href="#" target="_blank" rel="nofollow noopener">
+          <a class="social__link social__link--reddit" href="#" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Наш фитнес-центр в Реддит.</span>
           </a>
         </li>
