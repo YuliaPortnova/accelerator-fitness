@@ -75,10 +75,10 @@
           <source type="image/jpeg" media="(min-width: 768px)" srcset="img/content/preview-tablet@1x.jpg 1x, img/content/preview-tablet@2x.jpg 2x" width="270" height="170">
           <img class="about__preview" src="img/content/preview-mobile@1x.jpg" srcset="img/content/preview-mobile@2x.jpg 2x" width="320" height="170" alt="Видео о нашем фитнес-центре.">
         </picture>
-        <button class="about__video-button" type="button">
+        <!-- Для отображения состояния disabled добавьте класс с модификатором disabled ссылке about__video-button-->
+        <a class="about__video-button" href="https://www.youtube.com/watch?v=9TZXsZItgdw" data-href="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
           <span class="visually-hidden">Смотреть видео.</span>
-        </button>
-        <iframe class="about__video-iframe" width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=_OQrCbM0U8dfbgaU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </a>
       </div>
     </section>
     <section class="price" data-test="price" id="price-section">
