@@ -15,19 +15,23 @@ const showMessage = (isValueMissing, input) => {
   input.classList.add('form__input--error');
 };
 
-inputs.forEach((input) => {
-  input.addEventListener('input', () => {
-    if (input.validity.valid) {
-      input.classList.remove('form__input--error');
-    }
-  });
-});
-
-form.addEventListener('submit', (event) => {
+const initValidation = () => {
   inputs.forEach((input) => {
-    if (!input.validity.valid) {
-      showMessage(input.validity.valueMissing, input);
-      event.preventDefault();
-    }
+    input.addEventListener('input', () => {
+      if (input.validity.valid) {
+        input.classList.remove('form__input--error');
+      }
+    });
   });
-});
+
+  form.addEventListener('submit', (event) => {
+    inputs.forEach((input) => {
+      if (!input.validity.valid) {
+        showMessage(input.validity.valueMissing, input);
+        event.preventDefault();
+      }
+    });
+  });
+};
+
+export { initValidation };
