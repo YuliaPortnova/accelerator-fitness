@@ -81,6 +81,10 @@
   @media (min-width: $vp-768) {
     gap: 14px;
   }
+
+  @media (min-width: $vp-1366) {
+    gap: 15px;
+  }
 }
 
 .contacts__item {
@@ -90,6 +94,10 @@
 
   @media (min-width: $vp-768) {
     gap: 6px;
+  }
+
+  @media (min-width: $vp-1366) {
+    gap: 5px;
   }
 }
 

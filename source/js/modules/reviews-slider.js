@@ -23,7 +23,8 @@ new Swiper('.reviews', {
     1366: {
       simulateTouch: false,
       grabCursor: false,
-      spaceBetween: 300,
+      spaceBetween: 750,
+      speed: 900,
     }
   },
 

@@ -136,4 +136,9 @@
   @media (min-width: $vp-768) {
     padding: 25px 56px;
   }
+
+  @media (min-width: $vp-1366) {
+    padding-top: 25.5px;
+    padding-bottom: 24.5px;
+  }
 }
