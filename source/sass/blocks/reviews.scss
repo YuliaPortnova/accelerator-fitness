@@ -2,8 +2,8 @@
   padding: 42px 40px 40px;
 
   @media (min-width: $vp-768) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    position: relative;
+    padding: 60px 134px;
   }
 }
 
@@ -11,6 +11,13 @@
   margin: 0 0 40px;
 
   text-align: center;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 35px;
+
+    font-size: 54px;
+    line-height: 54px;
+  }
 }
 
 .reviews__list {
@@ -29,6 +36,14 @@
   color: $color-white;
 
   background-color: $color-additional;
+
+  @media (min-width: $vp-768) {
+    width: 500px;
+    min-height: 242px;
+    padding: 40px 30px 40px 150px;
+
+    text-align: left;
+  }
 }
 
 .reviews__img-container {
@@ -38,6 +53,15 @@
   overflow: hidden;
 
   border-radius: 50%;
+
+  @media (min-width: $vp-768) {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .reviews__img-container img {
@@ -50,6 +74,13 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 20px;
+
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .reviews__item p {
@@ -58,4 +89,71 @@
 
 .reviews__button {
   display: none;
+
+  @media (min-width: $vp-768) {
+    position: absolute;
+    top: 244px;
+    right: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: border-color 0.4s ease, background-color 0.4s ease;
+
+    &:hover {
+      border-color: $color-primary;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $color-primary;
+      background-color: $price-shadow;
+    }
+
+    &:active {
+      border-color: $color-primary;
+      background-color: $color-primary;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 16px;
+      height: 32px;
+
+      background-color: $color-primary;
+
+      transition: background-color 0.3s ease;
+
+      mask-image: url("/__spritemap#sprite-slider-button-view");
+      mask-position: center;
+      mask-repeat: no-repeat;
+      mask-size: 32px 32px;
+    }
+  }
+}
+
+.reviews__button:active::after {
+  background-color: $color-white;
+}
+
+.reviews__button-prev {
+  left: 27px;
+
+  &::after {
+    transform: rotate(180deg);
+  }
 }
