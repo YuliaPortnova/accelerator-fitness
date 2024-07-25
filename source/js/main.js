@@ -4,6 +4,8 @@
 // import 'swiper/css';
 import { initValidation } from './modules/validation.js';
 import { initVideo } from './modules/video.js';
+import { initFaq } from './modules/faq.js';
 
 initValidation();
 initVideo();
+initFaq();

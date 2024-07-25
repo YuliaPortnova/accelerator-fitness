@@ -25,6 +25,6 @@ const initVideo = () => {
     videoContainer.classList.add('is-active');
     videoContainer.appendChild(iframe);
   });
-}
+};
 
 export {initVideo};
