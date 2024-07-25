@@ -1,8 +1,10 @@
 import { Swiper } from '../vendor/swiper';
 
-new Swiper('.reviews__container', {
+new Swiper('.reviews', {
   watchOverflow: true,
   speed: 500,
+  slidesPerView: 1,
+  spaceBetween: 100,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
