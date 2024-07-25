@@ -231,7 +231,7 @@
   }
 }
 
-.price__rate:hover::before {
+.price__rate:focus-within::before {
   background-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
 }
 
