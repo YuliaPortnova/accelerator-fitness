@@ -1,0 +1,81 @@
+.slider-button {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    position: absolute;
+    top: 244px;
+    right: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: border-color 0.4s ease, background-color 0.4s ease;
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 16px;
+      height: 32px;
+
+      background-color: $color-primary;
+
+      transition: background-color 0.3s ease;
+
+      mask-image: url("/__spritemap#sprite-slider-button-view");
+      mask-position: center;
+      mask-repeat: no-repeat;
+      mask-size: 32px 32px;
+    }
+  }
+
+  @media (min-width: $vp-1366) {
+    top: 333px;
+    right: 282px;
+  }
+
+  &:hover {
+    border-color: $color-primary;
+  }
+
+  &:focus {
+    background-color: $price-shadow;
+    border-color: $color-primary;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+
+    pointer-events: none;
+  }
+}
+
+.slider-button:active::after {
+  background-color: $color-white;
+}
+
+.slider-button__prev {
+  left: 27px;
+
+  &::after {
+    transform: rotate(180deg);
+  }
+
+  @media (min-width: $vp-1366) {
+    left: 282px;
+  }
+}

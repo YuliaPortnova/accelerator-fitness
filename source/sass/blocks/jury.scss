@@ -2,6 +2,8 @@
   min-height: 405px;
 
   @media (min-width: $vp-768) {
+    position: relative;
+
     min-height: 490px;
   }
 
@@ -12,12 +14,24 @@
 
 .jury__container {
   padding: 40px 30px 39px;
+
+  @media (min-width: $vp-768) {
+    width: 560px;
+    padding: 30px 0 60px;
+  }
 }
 
 .jury__title {
   margin: 0 0 20px;
 
   text-align: center;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 46px;
+
+    font-size: 54px;
+    line-height: 54px;
+  }
 }
 
 .jury__list {
@@ -145,6 +159,11 @@
   position: relative;
 
   padding: 0 0 0 16px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+
   &::before {
     content: "";
     position: absolute;
@@ -162,5 +181,24 @@
 }
 
 .jury__button {
-  display: none;
+  @media (min-width: $vp-768) {
+    top: 254px;
+    left: calc(50% + 300px);
+  }
+
+  @media (min-width: $vp-1366) {
+    top: 333px;
+    right: 89%;
+  }
+}
+
+.jury__button-prev {
+  @media (min-width: $vp-768) {
+    right: calc(50% + 300px);
+    left: auto;
+  }
+
+  @media (min-width: $vp-1366) {
+    left: 282px;
+  }
 }
