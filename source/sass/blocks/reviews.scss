@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $vp-1366) {
-    padding: 100px 403px;
+    padding: 99px 403px;
   }
 }
 
@@ -45,6 +45,7 @@
   color: $color-white;
 
   background-color: $color-additional;
+  box-shadow: 0px 0px 40px 0px rgba($color-additional, 0.2);
 
   @media (min-width: $vp-768) {
     width: 500px;
