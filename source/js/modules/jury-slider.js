@@ -1,31 +1,30 @@
 import { Swiper } from '../vendor/swiper';
 
-new Swiper('.reviews', {
+new Swiper('.jury__container', {
   watchOverflow: true,
-  slidesPerView: 1,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  spaceBetween: 40,
+  speed: 500,
+  loop: true,
 
   breakpoints: {
     320: {
+      slidesPerView: 1,
       simulateTouch: true,
       grabCursor: true,
-      spaceBetween: 100,
-      speed: 500,
     },
     768: {
+      slidesPerView: 2,
       simulateTouch: true,
       grabCursor: true,
-      spaceBetween: 750,
-      speed: 800,
     },
     1366: {
+      slidesPerView: 4,
       simulateTouch: false,
       grabCursor: false,
-      spaceBetween: 750,
-      speed: 900,
     }
   },
 });

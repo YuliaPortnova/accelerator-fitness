@@ -9,3 +9,158 @@
     min-height: 600px;
   }
 }
+
+.jury__container {
+  padding: 40px 30px 39px;
+}
+
+.jury__title {
+  margin: 0 0 20px;
+
+  text-align: center;
+}
+
+.jury__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.jury__item {
+  position: relative;
+  z-index: 2;
+
+  width: 260px;
+
+  color: $color-white;
+
+  background-color: #c3c9d2;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    display: block;
+    height: 100%;
+
+    background-color: rgba($color-primary, 0.89);
+
+    transition: clip-path 0.4s ease;
+
+    clip-path: polygon(50% 100%, 70% 100%, 100% 100%, 0 100%, 30% 100%);
+
+    inset: 0;
+  }
+}
+
+.jury__item:hover::before {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.jury__img-container {
+  position: absolute;
+  z-index: -1;
+
+  width: 260px;
+  height: 300px;
+
+  background-color: #c3c9d2;
+
+  inset: 0;
+}
+
+.jury__img-container img {
+  display: block;
+}
+
+.jury__card-content {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  min-height: 300px;
+  padding: 61px 15px 25px;
+
+  gap: 10px;
+}
+
+.jury__card-title {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+
+  transform: translateY(193px);
+
+  transition: transform 0.5s ease;
+}
+
+.jury__item:hover .jury__card-title {
+  transform: translateY(0);
+}
+
+.jury__text {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  opacity: 0;
+
+  transition: opacity 0.2s ease;
+
+  .jury__item:hover & {
+    opacity: 1;
+
+    transition: opacity 0.4s ease 0.2s;
+  }
+}
+
+.jury__card-list {
+  display: grid;
+  max-width: 160px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style-type: none;
+
+  opacity: 0;
+
+  transition: opacity 0.2s ease;
+
+  gap: 12px;
+
+  .jury__item:hover & {
+    opacity: 1;
+
+    transition: opacity 0.4s ease 0.2s;
+  }
+}
+
+.jury__card-item {
+  position: relative;
+
+  padding: 0 0 0 16px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+    width: 6px;
+    height: 6px;
+
+    background-color: $color-white;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.jury__button {
+  display: none;
+}
