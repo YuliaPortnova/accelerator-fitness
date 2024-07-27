@@ -18,23 +18,6 @@
     cursor: pointer;
 
     transition: border-color 0.4s ease, background-color 0.4s ease;
-
-    &::after {
-      content: "";
-
-      display: block;
-      width: 16px;
-      height: 32px;
-
-      background-color: $color-primary;
-
-      transition: background-color 0.3s ease;
-
-      mask-image: url("/__spritemap#sprite-slider-button-view");
-      mask-position: center;
-      mask-repeat: no-repeat;
-      mask-size: 32px 32px;
-    }
   }
 
   @media (min-width: $vp-1366) {
@@ -62,13 +45,42 @@
 
     pointer-events: none;
   }
+
+  &::before {
+    @media (min-width: $vp-768) {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 80px;
+      height: 80px;
+
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &::after {
+    @media (min-width: $vp-768) {
+      content: "";
+
+      display: block;
+      width: 16px;
+      height: 32px;
+
+      background-color: $color-primary;
+
+      transition: background-color 0.3s ease;
+
+      mask-image: url("/__spritemap#sprite-slider-button-view");
+      mask-position: center;
+      mask-repeat: no-repeat;
+      mask-size: 32px 32px;
+    }
+  }
 }
 
-.slider-button:active::after {
-  background-color: $color-white;
-}
-
-.slider-button__prev {
+.slider-button--prev {
   left: 27px;
 
   &::after {
@@ -78,4 +90,8 @@
   @media (min-width: $vp-1366) {
     left: 282px;
   }
+}
+
+.slider-button:active::after {
+  background-color: $color-white;
 }

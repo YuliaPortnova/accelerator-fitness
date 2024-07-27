@@ -1,5 +1,5 @@
 .reviews {
-  padding: 40px 40px 40px;
+  padding: 40px;
 
   @media (min-width: $vp-768) {
     position: relative;
@@ -45,7 +45,7 @@
   color: $color-white;
 
   background-color: $color-additional;
-  box-shadow: 0px 0px 40px 0px rgba($color-additional, 0.2);
+  box-shadow: 0 0 40px 0 rgba($color-additional, 0.2);
 
   @media (min-width: $vp-768) {
     width: 500px;
