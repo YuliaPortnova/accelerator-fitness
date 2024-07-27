@@ -1,7 +1,7 @@
-const buttons = document.querySelectorAll('.faq__button');
-const categories = document.querySelectorAll('.faq__category');
-const questionButtons = document.querySelectorAll('.faq__question');
-const firstOpenQuestion = document.querySelector('.faq__question--open + p');
+const buttonsElements = document.querySelectorAll('.faq__button');
+const categoriesElements = document.querySelectorAll('.faq__category');
+const questionButtonsElements = document.querySelectorAll('.faq__question');
+const firstOpenQuestionElement = document.querySelector('.faq__question--open + p');
 
 const classesRemove = (elements, cssClass) => {
   elements.forEach((element) => {
@@ -10,28 +10,28 @@ const classesRemove = (elements, cssClass) => {
 };
 
 const initFaq = () => {
-  firstOpenQuestion.style.maxHeight = `${firstOpenQuestion.scrollHeight}px`;
+  firstOpenQuestionElement.style.maxHeight = `${firstOpenQuestionElement.scrollHeight}px`;
 
-  buttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      classesRemove(buttons, 'faq__button--active');
-      button.classList.add('faq__button--active');
+  buttonsElements.forEach((buttonElement, index) => {
+    buttonElement.addEventListener('click', () => {
+      classesRemove(buttonsElements, 'faq__button--active');
+      buttonElement.classList.add('faq__button--active');
 
-      classesRemove(categories, 'faq__category--open');
-      categories[index].classList.add('faq__category--open');
+      classesRemove(categoriesElements, 'faq__category--open');
+      categoriesElements[index].classList.add('faq__category--open');
 
-      const openQuestion = categories[index].querySelector('.faq__question--open + p');
-      openQuestion.style.maxHeight = `${openQuestion.scrollHeight}px`;
+      const openQuestionElement = categoriesElements[index].querySelector('.faq__question--open + p');
+      openQuestionElement.style.maxHeight = `${openQuestionElement.scrollHeight}px`;
     });
   });
 
-  questionButtons.forEach((questionButton) => {
-    questionButton.addEventListener('click', () => {
-      questionButton.classList.toggle('faq__question--open');
+  questionButtonsElements.forEach((questionButtonElement) => {
+    questionButtonElement.addEventListener('click', () => {
+      questionButtonElement.classList.toggle('faq__question--open');
 
-      const clickedDescription = questionButton.nextElementSibling;
-      const isActive = questionButton.classList.contains('faq__question--open');
-      clickedDescription.style.maxHeight = isActive ? `${clickedDescription.scrollHeight}px` : 0;
+      const clickedDescriptionElement = questionButtonElement.nextElementSibling;
+      const isActive = questionButtonElement.classList.contains('faq__question--open');
+      clickedDescriptionElement.style.maxHeight = isActive ? `${clickedDescriptionElement.scrollHeight}px` : 0;
     });
   });
 };
