@@ -3,7 +3,7 @@ const renderPrice = (elements, prices) => {
     element.textContent = prices[index];
     element.dataset.price = prices[index];
   });
-}
+};
 
 export { renderPrice };
 

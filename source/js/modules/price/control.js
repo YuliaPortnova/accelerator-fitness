@@ -13,11 +13,11 @@ const initPrices = () => {
     buttonElement.addEventListener('click', () => {
       currentIndex = index;
       tabButtonsElements.forEach((element, elementIndex) => {
-        element.classList.toggle('price__tab-button--active', elementIndex == currentIndex);
+        element.classList.toggle('price__tab-button--active', elementIndex === currentIndex);
       });
       renderPrice(pricesElements, prices[currentIndex]);
     });
-  })
+  });
 };
 
 export { initPrices };
