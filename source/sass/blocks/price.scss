@@ -231,9 +231,14 @@
   }
 }
 
-.price__rate:focus-within::before,
-.price__rate:has(.price__rate-button:hover)::before {
+.price__rate:focus-within::before {
   background-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+}
+
+.price__rate:has(.price__rate-button:hover)::before {
+  @media (min-width: $vp-1366) {
+    background-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+  }
 }
 
 .price__rate-title {
