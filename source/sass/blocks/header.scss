@@ -29,6 +29,7 @@
 }
 
 .header__phone {
+  max-width: 155px;
   margin-left: auto;
   padding: 4px 0;
 
@@ -43,6 +44,7 @@
   transition: color 0.4s ease;
 
   @media (min-width: $vp-768) {
+    max-width: 400px;
     padding-top: 0;
 
     font-size: 24px;

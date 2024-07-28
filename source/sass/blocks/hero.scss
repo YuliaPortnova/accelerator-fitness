@@ -130,3 +130,11 @@
     right: 175px;
   }
 }
+
+.hero__img-container img {
+  max-height: 450px;
+
+  @media (min-width: $vp-1366) {
+    max-height: 600px;
+  }
+}

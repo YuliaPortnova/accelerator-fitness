@@ -122,11 +122,12 @@
   }
 }
 
-.features__list li:not(:nth-child(3n)) b {
+.features__list li:not(:nth-child(3)) b {
   font-weight: 700;
   font-size: 64px;
   line-height: 64px;
 
+  background-color: $color-additional;
   background-image: $gradient-text;
   background-clip: text;
 
@@ -210,7 +211,7 @@
   }
 }
 
-.features__list li:nth-child(3n) b {
+.features__list li:nth-child(3) b {
   font-weight: 700;
   font-size: 64px;
   line-height: 64px;
@@ -221,7 +222,7 @@
   }
 }
 
-.features__list li:nth-child(3n) h3 {
+.features__list li:nth-child(3) h3 {
   margin-bottom: 15px;
 
   font-weight: 700;
