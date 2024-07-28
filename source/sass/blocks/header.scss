@@ -9,8 +9,8 @@
   }
 
   @media (min-width: $vp-1366) {
-    padding-bottom: 23px;
     margin-bottom: 30px;
+    padding-bottom: 23px;
   }
 }
 
@@ -31,22 +31,27 @@
 .header__phone {
   margin-left: auto;
   padding: 4px 0;
-  border-bottom: 1px solid transparent;
+
   font-weight: 700;
   font-size: 22px;
   line-height: 22px;
   color: $color-white;
   text-decoration: none;
+
+  border-bottom: 1px solid transparent;
+
   transition: color 0.4s ease;
 
   @media (min-width: $vp-768) {
     padding-top: 0;
+
     font-size: 24px;
     line-height: 24px;
   }
 
   @media (min-width: $vp-1366) {
     padding-top: 2px;
+
     font-size: 26px;
     line-height: 26px;
   }
@@ -57,16 +62,19 @@
 
   &:focus {
     color: $color-additional;
+
     outline: none;
   }
 
   &:active {
     color: $color-primary;
+
     border-color: $color-primary;
   }
 
   &--disabled {
-    pointer-events: none;
     color: rgba($color-white-additional, 0.5);
+
+    pointer-events: none;
   }
 }

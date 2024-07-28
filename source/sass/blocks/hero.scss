@@ -1,36 +1,40 @@
 .hero__container {
   display: grid;
-  grid-template-columns: 113px 156px;
-  gap: 14px 21px;
   padding-top: 44px;
   padding-bottom: 32px;
 
+  gap: 14px 21px;
+  grid-template-columns: 113px 156px;
+
   @media (min-width: $vp-768) {
     position: relative;
-    grid-template-columns: 113px 185px;
-    gap: 10px 26px;
+
     padding-top: 31px;
     padding-right: 399px;
     padding-bottom: 131px;
+
+    gap: 10px 26px;
+    grid-template-columns: 113px 185px;
   }
 
   @media (min-width: $vp-1366) {
-    grid-template-columns: 115px 270px;
-    gap: 40px 0;
     padding: 52px 175px 172px 250px;
+
+    gap: 40px 0;
+    grid-template-columns: 115px 270px;
   }
 }
 
 .hero__city {
-  grid-column: 1/3;
-  justify-self: end;
   margin: 0;
 
-  font-family: $second-family;
   font-weight: 600;
   font-size: 32px;
-
   line-height: 32px;
+  font-family: $second-family;
+
+  grid-column: 1/3;
+  justify-self: end;
 
   @media (min-width: $vp-768) {
     font-size: 42px;
@@ -46,13 +50,13 @@
 .hero__title {
   margin: 0;
 
-  font-family: $second-family;
   font-weight: 800;
   font-size: 62px;
   line-height: 62px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-family: $second-family;
   text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 
   @media (min-width: $vp-768) {
     font-size: 72px;
@@ -70,14 +74,15 @@
 .hero__features {
   margin: 65px 0 0;
   padding: 0;
-  list-style-type: none;
 
+  list-style-type: none;
   font-weight: 400;
   line-height: 20px;
   text-align: right;
 
   @media (min-width: $vp-768) {
     margin-top: 80px;
+
     font-size: 14px;
     line-height: 22px;
   }
@@ -88,16 +93,18 @@
 }
 
 .hero__button {
-  grid-column: 1/3;
   width: 100%;
   margin-top: 33px;
 
+  grid-column: 1/3;
+
   @media (min-width: $vp-768) {
     width: auto;
-    padding: 20px;
-    justify-self: end;
     min-width: 185px;
     margin-top: 40px;
+    padding: 20px;
+
+    justify-self: end;
   }
 
   @media (min-width: $vp-1366) {
@@ -115,6 +122,7 @@
     position: absolute;
     top: 0;
     right: 45px;
+
     display: block;
   }
 

@@ -8,7 +8,6 @@
 
   font-weight: 300;
   font-size: 14px;
-
   line-height: 22px;
   font-family: $font-family;
   color: $color-primary;
@@ -42,10 +41,16 @@
 .page__form-address-container {
   @media (min-width: $vp-1366) {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
   }
 }
 
+.page__header-hero {
+  color: $color-white;
+
+  background-image: $gradient-hero;
+}
 
 .page__page-footer {
   margin-top: auto;
