@@ -226,8 +226,7 @@
 
   @media (min-width: $vp-1366) {
     top: 321px;
-    right: 33px;
-    left: auto;
+    left: calc(50% + 601px);
   }
 
   &--prev {
@@ -237,8 +236,7 @@
     }
 
     @media (min-width: $vp-1366) {
-      right: auto;
-      left: 33px;
+      right: calc(50% + 601px);
     }
   }
 }

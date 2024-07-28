@@ -1,16 +1,20 @@
 .reviews {
+  @media (min-width: $vp-768) {
+    position: relative;
+  }
+}
+
+.reviews__container {
   max-width: 320px;
   padding: 40px;
 
   @media (min-width: $vp-768) {
     max-width: 768px;
-    position: relative;
-
     padding: 61px 134px 60px;
   }
 
   @media (min-width: $vp-1366) {
-    max-width: initial;
+    max-width: 1366px;
     padding: 99px 403px;
   }
 }

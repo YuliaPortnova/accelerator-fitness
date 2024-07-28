@@ -1,10 +1,11 @@
 .slider-button {
+  z-index: 2;
   display: none;
 
   @media (min-width: $vp-768) {
     position: absolute;
     top: 244px;
-    right: 28px;
+    left: calc(50% + 307px);
 
     display: flex;
     justify-content: center;
@@ -22,7 +23,7 @@
 
   @media (min-width: $vp-1366) {
     top: 333px;
-    right: 282px;
+    left: calc(50% + 351px);
   }
 
   &:hover {
@@ -87,8 +88,13 @@
     transform: rotate(180deg);
   }
 
+  @media (min-width: $vp-768) {
+    right: calc(50% + 307px);
+    left: auto;
+  }
+
   @media (min-width: $vp-1366) {
-    left: 282px;
+    right: calc(50% + 351px);
   }
 }
 

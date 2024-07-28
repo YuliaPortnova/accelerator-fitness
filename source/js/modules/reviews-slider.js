@@ -1,7 +1,7 @@
 import { Swiper } from '../vendor/swiper';
 
 const initReviewsSlider = () => {
-  new Swiper('.reviews', {
+  new Swiper('.reviews__container', {
     watchOverflow: true,
     slidesPerView: 1,
     navigation: {
@@ -13,19 +13,19 @@ const initReviewsSlider = () => {
       320: {
         simulateTouch: true,
         grabCursor: true,
-        spaceBetween: 100,
+        spaceBetween: 150,
         speed: 500,
       },
       768: {
         simulateTouch: true,
         grabCursor: true,
-        spaceBetween: 750,
+        spaceBetween: 200,
         speed: 800,
       },
       1366: {
         simulateTouch: false,
         grabCursor: false,
-        spaceBetween: 750,
+        spaceBetween: 450,
         speed: 900,
       }
     },
