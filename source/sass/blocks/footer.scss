@@ -37,7 +37,7 @@
 
   @media (min-width: $vp-1366) {
     width: 130px;
-    height: 26px;
+    height: 27px;
   }
 }
 
@@ -67,7 +67,7 @@
   }
 
   @media (min-width: $vp-1366) {
-    gap: 20px 60.5px;
+    gap: 20px 60.6px;
   }
 }
 
@@ -121,6 +121,7 @@
 
   @media (min-width: $vp-1366) {
     max-width: 200px;
+    margin-top: 0.5px;
 
     justify-self: end;
   }
