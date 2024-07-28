@@ -4,8 +4,8 @@ const initJurySlider = () => {
   new Swiper('.jury__container', {
     watchOverflow: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.jury__button--next',
+      prevEl: '.jury__button--prev',
     },
     spaceBetween: 40,
     speed: 500,

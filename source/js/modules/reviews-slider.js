@@ -5,8 +5,8 @@ const initReviewsSlider = () => {
     watchOverflow: true,
     slidesPerView: 1,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.reviews__button--next',
+      prevEl: '.reviews__button--prev',
     },
 
     breakpoints: {
