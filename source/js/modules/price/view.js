@@ -1,5 +1,5 @@
 const tabButtonsElements = document.querySelectorAll('.price__tab-button');
-const pricesElements = document.querySelectorAll('.price__rate-price');
+const pricesElements = document.querySelectorAll('.price__rate-price span');
 
 const renderPrice = (prices, currentIndex) => {
   tabButtonsElements.forEach((element, elementIndex) => {
