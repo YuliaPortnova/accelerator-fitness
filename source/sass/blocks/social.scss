@@ -94,7 +94,7 @@
   &::after {
     margin-top: 2px;
 
-    mask-image: url("/__spritemap#sprite-social-vk-view");
+    mask-image: url("../__spritemap#sprite-social-vk-view");
     mask-size: 15px 15px;
   }
 }
@@ -103,14 +103,14 @@
   &::after {
     margin-left: 1px;
 
-    mask-image: url("/__spritemap#sprite-social-ok-view");
+    mask-image: url("../__spritemap#sprite-social-ok-view");
     mask-size: 10px 17px;
   }
 }
 
 .social__link--reddit {
   &::after {
-    mask-image: url("/__spritemap#sprite-social-reddit-view");
+    mask-image: url("../__spritemap#sprite-social-reddit-view");
     mask-size: 15px 15px;
   }
 }
